@@ -1,8 +1,16 @@
-var submitButton = document.getElementsByName("submit")[0],
-    checkbox = document.getElementsByName("checkbox")[0],
-    textArea = document.getElementsByName("textarea").value;
+var submitButton = document.getElementById("submit");
 
 // Attach events to submit button
 submitButton.addEventListener("click", function() {
-    alert();
+
+    var checkbox = document.getElementById("checkbox"),
+        checkbox2 = document.getElementById("checkbox2"),
+        textAreaValue = document.getElementById("textarea").value,
+        textAreaLength = textAreaValue.length,
+        i = 0;
+
+    for (i; i < textAreaLength; i++) {
+        console.log(textAreaValue[i]);
+    }
+
 });
