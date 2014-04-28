@@ -37,6 +37,7 @@ submitButton.addEventListener("click", function() {
     });
 
     // Show results in console
+    console.log("Words: " + separatedWords);
     console.log("Number of words: " + numberOfWords);
     console.log("Number of lines: " + numberOfLines);
     console.log("Average word length: " + Math.floor(numberOfChars / numberOfWords));
