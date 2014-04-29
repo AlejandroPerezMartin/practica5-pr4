@@ -13,7 +13,6 @@ body {
 }
 
 * {
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -25,14 +24,21 @@ body {
 }
 
 .box {
+    background: #fff;
+    border-radius: 3em;
+    box-shadow: 0 0 1em rgba(0,0,0,.4);
     left: 50%;
+    padding: 2em;
     position: absolute;
     text-align: center;
     -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     top: 50%;
     width: 100%;
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+
+textarea {
+    max-width: 100%;
 }

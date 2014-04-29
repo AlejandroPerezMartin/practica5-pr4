@@ -15,18 +15,25 @@
             </p>
 
             <p>
+                <label for="numberofresults">Number of results:</label>
+                <input type="number" name="numberofresults" id="numberofresults" size="10" min="1" max="100"></textarea>
+            </p>
+
+            <p>
                 <input type="checkbox" id="checkbox" checked="checked">
-                <label for="checkbox">Mark</label>
+                <label for="checkbox">Show number of words for each frequency</label>
             </p>
 
             <p>
                 <input type="checkbox" id="checkbox2" checked="checked">
-                <label for="checkbox">Mark 2</label>
+                <label for="checkbox">Show number of words and lines, and average word length</label>
             </p>
 
             <p>
                 <input type="submit" id="submit" name="submit">
             </p>
+
+            <div id="results"></div>
         </div>
     </div>
 
