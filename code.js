@@ -1,8 +1,10 @@
+"use strict";
+
 var submitButton = document.getElementById("submit");
 
 // Attach events to submit button
 submitButton.addEventListener("click", function() {
-
+    
     // Variable declaration
     var checkbox = document.getElementById("checkbox"),
         checkbox2 = document.getElementById("checkbox2"),
